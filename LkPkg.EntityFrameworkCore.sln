@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LkPkg.EntityFrameworkCore", "LkPkg.EntityFrameworkCore\LkPkg.EntityFrameworkCore.csproj", "{D3CEB329-F5BB-4806-A7A2-33A181B21AAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LkPkg.EntityFrameworkCore.Tests", "LkPkg.EntityFrameworkCore.Tests\LkPkg.EntityFrameworkCore.Tests.csproj", "{DC1B82E8-8AFE-4A04-A834-7606866F37E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3CEB329-F5BB-4806-A7A2-33A181B21AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CEB329-F5BB-4806-A7A2-33A181B21AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CEB329-F5BB-4806-A7A2-33A181B21AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CEB329-F5BB-4806-A7A2-33A181B21AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC1B82E8-8AFE-4A04-A834-7606866F37E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC1B82E8-8AFE-4A04-A834-7606866F37E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC1B82E8-8AFE-4A04-A834-7606866F37E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC1B82E8-8AFE-4A04-A834-7606866F37E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27220FD9-E23C-4132-AF33-8E972E72A93F}
+	EndGlobalSection
+EndGlobal
