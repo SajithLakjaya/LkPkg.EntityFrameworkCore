@@ -1,5 +1,6 @@
 ﻿using System.Linq.Expressions;
 using LkPkg.EntityFrameworkCore.Core;
+using LkPkg.EntityFrameworkCore.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace LkPkg.EntityFrameworkCore.Repository
@@ -26,7 +27,7 @@ namespace LkPkg.EntityFrameworkCore.Repository
             return _dbSet.Where(expression);
         }
 
-        public async Task<T> FindByIdAsync(object id)
+        public async Task<T?> FindByIdAsync(object id)
         {
             Guard.IsNotNull(id, nameof(id));
             return await _dbSet.FindAsync(id);
@@ -49,6 +50,10 @@ namespace LkPkg.EntityFrameworkCore.Repository
         public async Task DeleteAsync(object id)
         {
             var entity = await FindByIdAsync(id);
+            if (entity == null)
+            {
+                throw new RepositoryException($"Unable to find entity from id : {id}");
+            }
             _dbSet.Remove(entity);
         }
     }
