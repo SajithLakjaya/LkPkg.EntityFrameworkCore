@@ -1,11 +1,9 @@
 ﻿using LkPkg.EntityFrameworkCore.Abstractions.Interfaces;
-using LkPkg.EntityFrameworkCore.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Collections.Concurrent;
-using System.Data;
 
-namespace LkPkg.EntityFrameworkCore.UnitOfWork
+namespace LkPkg.EntityFrameworkCore
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -102,7 +100,7 @@ namespace LkPkg.EntityFrameworkCore.UnitOfWork
             }
         }
 
-        private IRepository<T> GetRepository<T>(string prefix) where T: class
+        private IRepository<T> GetRepository<T>(string prefix) where T : class
         {
             var type = typeof(T);
             var typeName = $"{prefix}.{type.FullName}";
@@ -116,7 +114,7 @@ namespace LkPkg.EntityFrameworkCore.UnitOfWork
             return (IRepository<T>)repository;
         }
 
-        private IRepository Factory<T>(DbContext context) where T: class
+        private IRepository Factory<T>(DbContext context) where T : class
         {
             return new Repository<T>(context);
         }

@@ -64,7 +64,7 @@ namespace LkPkg.EntityFrameworkCore.Tests
                 .UseInMemoryDatabase(new Guid().ToString())
                 .Options;
             _context = new TestDbContext(options);
-            _unitOfWork = new UnitOfWork.UnitOfWork(_context);
+            _unitOfWork = new UnitOfWork(_context);
         }
     }
 

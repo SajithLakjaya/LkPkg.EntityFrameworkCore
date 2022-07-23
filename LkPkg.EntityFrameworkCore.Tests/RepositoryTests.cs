@@ -1,5 +1,4 @@
 using LkPkg.EntityFrameworkCore.Abstractions.Interfaces;
-using LkPkg.EntityFrameworkCore.Repository;
 using LkPkg.EntityFrameworkCore.Tests.Core;
 using LkPkg.EntityFrameworkCore.Tests.Core.Entity;
 using Microsoft.EntityFrameworkCore;

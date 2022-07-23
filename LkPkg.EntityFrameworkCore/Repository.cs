@@ -3,7 +3,7 @@ using LkPkg.EntityFrameworkCore.Core;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace LkPkg.EntityFrameworkCore.Repository
+namespace LkPkg.EntityFrameworkCore
 {
     public class Repository<T> : IRepository<T> where T : class
     {
