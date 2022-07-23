@@ -1,8 +1,8 @@
 ﻿using System.Linq.Expressions;
 
-namespace LkPkg.EntityFrameworkCore.Repository;
+namespace LkPkg.EntityFrameworkCore.Abstractions.Interfaces;
 
-public interface IGenericRepository<T> where T : class
+public interface IRepository<T> where T : class
 {
     IQueryable<T> FindAll();
     IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression);

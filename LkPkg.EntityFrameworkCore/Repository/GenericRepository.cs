@@ -1,10 +1,11 @@
-﻿using LkPkg.EntityFrameworkCore.Core;
+﻿using LkPkg.EntityFrameworkCore.Abstractions.Interfaces;
+using LkPkg.EntityFrameworkCore.Core;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 namespace LkPkg.EntityFrameworkCore.Repository
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<T> : IRepository<T> where T : class
     {
         private readonly DbContext _context;
         private readonly DbSet<T> _dbSet;
