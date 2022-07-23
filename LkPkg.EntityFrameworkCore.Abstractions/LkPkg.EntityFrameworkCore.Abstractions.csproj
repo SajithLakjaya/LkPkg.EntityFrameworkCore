@@ -4,6 +4,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Description>Provides the extensions and repository pattern for EntityFrameworkCore</Description>
+    <Company>Sajith Lakjaya</Company>
+    <PackageProjectUrl>https://github.com/SajithLakjaya/LkPkg.EntityFrameworkCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SajithLakjaya/LkPkg.EntityFrameworkCore</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>EntityFrameworkCore;Repository;UnitOfWork;EFCore;Entity Framework Core;EF</PackageTags>
   </PropertyGroup>
 
 </Project>

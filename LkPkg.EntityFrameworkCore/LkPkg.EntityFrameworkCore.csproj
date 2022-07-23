@@ -5,6 +5,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Company>Sajith Lakjaya</Company>
+    <Description>Provides the extensions and repository pattern for EntityFrameworkCore</Description>
+    <PackageProjectUrl>https://github.com/SajithLakjaya/LkPkg.EntityFrameworkCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SajithLakjaya/LkPkg.EntityFrameworkCore</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>EntityFrameworkCore;Repository;UnitOfWork;EFCore;Entity Framework Core;EF</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
