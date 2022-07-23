@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LkPkg.EntityFrameworkCore.Abstractions\LkPkg.EntityFrameworkCore.Abstractions.csproj" />
     <ProjectReference Include="..\LkPkg.EntityFrameworkCore\LkPkg.EntityFrameworkCore.csproj" />
   </ItemGroup>
 

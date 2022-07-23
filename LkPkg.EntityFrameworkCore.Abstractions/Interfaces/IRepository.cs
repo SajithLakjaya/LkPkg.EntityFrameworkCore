@@ -2,7 +2,11 @@
 
 namespace LkPkg.EntityFrameworkCore.Abstractions.Interfaces;
 
-public interface IRepository<T> where T : class
+public interface IRepository : IDisposable
+{
+}
+
+public interface IRepository<T> : IRepository, IDisposable where T : class
 {
     IQueryable<T> FindAll();
     IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression);

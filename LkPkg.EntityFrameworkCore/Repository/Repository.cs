@@ -5,16 +5,26 @@ using System.Linq.Expressions;
 
 namespace LkPkg.EntityFrameworkCore.Repository
 {
-    public class GenericRepository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly DbContext _context;
-        private readonly DbSet<T> _dbSet;
+        #region Protected Members
 
-        public GenericRepository(DbContext context)
+        protected readonly DbContext _context;
+        protected readonly DbSet<T> _dbSet;
+
+        #endregion
+
+        #region Constructor
+
+        public Repository(DbContext context)
         {
             _context = context;
             _dbSet = _context.Set<T>();
         }
+
+        #endregion
+
+        #region IRepository<T> Members
 
         public virtual IQueryable<T> FindAll()
         {
@@ -72,5 +82,37 @@ namespace LkPkg.EntityFrameworkCore.Repository
             Guard.IsNotNull(entities, nameof(entities));
             _dbSet.RemoveRange(entities);
         }
+
+        #endregion
+
+        #region IDisposable Members
+
+        private bool _disposed;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (_disposed)
+            {
+                return;
+            }
+
+            if (disposing)
+            {
+                // TODO: dispose managed state (managed objects).
+            }
+
+            // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
+            // TODO: set large fields to null.
+
+            _disposed = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        #endregion IDisposable Members
     }
 }

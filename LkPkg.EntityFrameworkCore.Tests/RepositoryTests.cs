@@ -1,3 +1,4 @@
+using LkPkg.EntityFrameworkCore.Abstractions.Interfaces;
 using LkPkg.EntityFrameworkCore.Repository;
 using LkPkg.EntityFrameworkCore.Tests.Core;
 using LkPkg.EntityFrameworkCore.Tests.Core.Entity;
@@ -8,7 +9,7 @@ namespace LkPkg.EntityFrameworkCore.Tests
     public class RepositoryTests
     {
         private TestDbContext _context;
-        private IGenericRepository<TestEntity> _repository;
+        private IRepository<TestEntity> _repository;
 
         #region Configurations
 
@@ -258,7 +259,7 @@ namespace LkPkg.EntityFrameworkCore.Tests
                 .UseInMemoryDatabase(new Guid().ToString())
                 .Options;
             _context = new TestDbContext(options);
-            _repository = new GenericRepository<TestEntity>(_context);
+            _repository = new Repository<TestEntity>(_context);
         }
 
         #endregion
