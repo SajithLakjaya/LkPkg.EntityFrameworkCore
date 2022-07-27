@@ -10,6 +10,8 @@
     <RepositoryUrl>https://github.com/SajithLakjaya/LkPkg.EntityFrameworkCore</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>EntityFrameworkCore;Repository;UnitOfWork;EFCore;Entity Framework Core;EF</PackageTags>
+    <FileVersion>6.0.7</FileVersion>
+    <Version>6.0.7</Version>
   </PropertyGroup>
 
 </Project>
