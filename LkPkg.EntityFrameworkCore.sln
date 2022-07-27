@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LkPkg.EntityFrameworkCore",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LkPkg.EntityFrameworkCore.Tests", "LkPkg.EntityFrameworkCore.Tests\LkPkg.EntityFrameworkCore.Tests.csproj", "{DC1B82E8-8AFE-4A04-A834-7606866F37E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LkPkg.EntityFrameworkCore.Abstractions", "LkPkg.EntityFrameworkCore.Abstractions\LkPkg.EntityFrameworkCore.Abstractions.csproj", "{1F645BC8-2E7D-43B1-B6AF-F057CC8A175C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LkPkg.EntityFrameworkCore.Abstractions", "LkPkg.EntityFrameworkCore.Abstractions\LkPkg.EntityFrameworkCore.Abstractions.csproj", "{1F645BC8-2E7D-43B1-B6AF-F057CC8A175C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{42192591-918A-4A96-8A2B-00731B167721}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
