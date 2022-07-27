@@ -11,7 +11,15 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>EntityFrameworkCore;Repository;UnitOfWork;EFCore;Entity Framework Core;EF</PackageTags>
     <Version>6.0.7</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
